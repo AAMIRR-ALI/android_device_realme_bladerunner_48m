@@ -219,16 +219,21 @@
         <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/11/16, Add for voice call translation START -->
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO_TRANS" acdb_id="14"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TRANS" acdb_id="31"/>
+        <device name="SND_DEVICE_OUT_VOICE_HEADSET_TRANS" acdb_id="9"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC_TRANS" acdb_id="178"/>
         <device name="SND_DEVICE_IN_VOICE_DMIC_TRANS" acdb_id="170"/>
+        <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC_TRANS" acdb_id="182"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO_TRANS_NO_DL_TTS" acdb_id="14"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TRANS_NO_DL_TTS" acdb_id="31"/>
+        <device name="SND_DEVICE_OUT_VOICE_HEADSET_TRANS_NO_DL_TTS" acdb_id="9"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC_TRANS_NO_DL_TTS" acdb_id="158"/>
         <device name="SND_DEVICE_IN_VOICE_DMIC_TRANS_NO_DL_TTS" acdb_id="154"/>
+        <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC_TRANS_NO_DL_TTS" acdb_id="141"/>
+        <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/11/16, Add for voice call translation END -->
         <!--Du.jie@MULTIMEDIA.AUDIODRIVER.HAL, 2020/03/24, Add for Video recording switch left and right channels-->
         <device name="SND_DEVICE_IN_HANDSET_DMIC_STEREO_SWITCH" acdb_id="34"/>
         <!--Du.jie@MULTIMEDIA.AUDIODRIVER.HAL, 2020/03/24, Add for Video recording switch left and right channels end-->
-        <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/11/16, Add for voice call translation END -->
+
         <!-- Liukang@LQ.MM.AudioDriver.HAL, 2022/01/18, Add for dual headphone feature START -->
         <device name="SND_DEVICE_OUT_HEADPHONES_AND_BT_A2DP" acdb_id="10"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_AND_BT_SCO" acdb_id="10"/>
@@ -243,9 +248,6 @@
         <!-- zhenyu.dong@rm.MM.AudioDriver.HAL, 2020/1/9, Add for main mic and sec mic change START -->
         <device name="SND_DEVICE_IN_HANDSET_SINGLE_MIC" acdb_id="4"/>
         <!-- zhenyu.dong@rm.MM.AudioDriver.HAL, 2020/1/9, Add for main mic and sec mic change END -->
-        <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2020/01/11, Add for new acdb id for voice recognition START -->
-        <device name="SND_DEVICE_IN_VOICE_REC_DMIC_FLUENCE" acdb_id="43" />
-        <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2020/01/11, Add for new acdb id for voice recognition END -->
     </acdb_ids>
     <backend_names>
         <!-- Liukang@LQ.MM.AudioDriver.HAL, 2022/01/18, Add for dual headphone feature START -->
@@ -458,12 +460,17 @@
         <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/11/16, Add for voice call translation START -->
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO_TRANS" backend="speaker" interface="TERT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TRANS" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_HEADSET_TRANS" backend="headset" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC_TRANS" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_VOICE_DMIC_TRANS" interface="TX_CDC_DMA_TX_3"/>
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO_TRANS_NO_DL_TTS" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC_TRANS" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
+
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO_TRANS_NO_DL_TTS" backend="speaker" interface="TERT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TRANS_NO_DL_TTS" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_HEADSET_TRANS_NO_DL_TTS" backend="headset" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC_TRANS_NO_DL_TTS" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_VOICE_DMIC_TRANS_NO_DL_TTS" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC_TRANS_NO_DL_TTS" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
         <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/11/16, Add for voice call translation END -->
         <!-- #Hefeng.Wu@RM.MM.AudioDriver.HAL, 2019/11/05, Add for oppo config start -->
         <device name="SND_DEVICE_OUT_HEADPHONES_AND_BT_A2DP" backend="headphones-and-bt-a2dp" interface="RX_CDC_DMA_RX_0-and-SLIMBUS_7_RX"/>

@@ -18,7 +18,7 @@
 $(call inherit-product, device/realme/sm8250-common/common.mk)
 
 # Inherit proprietary libraries
-$(call inherit-product, vendor/realme/bladerunner/bladerunner-vendor.mk)
+$(call inherit-product, vendor/realme/bladerunner_48m/bladerunner_48m-vendor.mk)
 
 # API
 PRODUCT_SHIPPING_API_LEVEL := 29
@@ -54,4 +54,4 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/realme/bladerunner
+    device/realme/bladerunner_48m

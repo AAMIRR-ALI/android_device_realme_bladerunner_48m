@@ -17,10 +17,10 @@
 # Include the common OEM chipset BoardConfig.
 include device/realme/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/realme/bladerunner
+DEVICE_PATH := device/realme/bladerunner_48m
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX2071CN,RMX2075L1,RMX2076L1,bladerunner
+TARGET_OTA_ASSERT_DEVICE := RMX2072CN,bladerunner_48m
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml

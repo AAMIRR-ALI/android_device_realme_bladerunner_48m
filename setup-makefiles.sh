@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=bladerunner
+export DEVICE=bladerunner_48m
 export DEVICE_COMMON=sm8250-common
 export VENDOR=realme
 

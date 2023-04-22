@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from realme X50 Pro 5G (RMX2076_11.F.10).
+## from realme X50 Pro 5G Play (RMX2072_11.F.15).
 
 # ACDB
 odm/etc/acdbdata/Bluetooth_cal.acdb
@@ -18,40 +18,34 @@ vendor/lib/hw/audio.primary.kona.so
 
 # Camera
 odm/etc/camera/config/camera_unit_config
-odm/etc/camera/config/gc8054
 odm/etc/camera/config/hi846
-odm/etc/camera/config/imx616
+odm/etc/camera/config/imx471
+odm/etc/camera/config/imx586
 odm/etc/camera/config/oplus_camera_aps_config
 odm/etc/camera/config/oplus_camera_config
-odm/etc/camera/config/s5k3m5sx
-odm/etc/camera/config/s5kgw1
 odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/camera_engmode.xml
 odm/etc/camera/settings_fdc.txt
-odm/lib64/camera/com.qti.sensor.gc8054.so
+odm/lib64/camera/com.qti.sensor.gc02m0b.so
 odm/lib64/camera/com.qti.sensor.hi846.so
-odm/lib64/camera/com.qti.sensor.imx616.so
+odm/lib64/camera/com.qti.sensor.imx471.so
+odm/lib64/camera/com.qti.sensor.imx586.so
 odm/lib64/camera/com.qti.sensor.ov02a1b.so
-odm/lib64/camera/com.qti.sensor.s5k3m5sx.so
-odm/lib64/camera/com.qti.sensor.s5kgw1.so
-odm/lib64/camera/com.qti.sensormodule.ofilm_gc8054.bin
-odm/lib64/camera/com.qti.sensormodule.qtech_imx616.bin
-odm/lib64/camera/com.qti.sensormodule.qtech_s5k3m5sx.bin
-odm/lib64/camera/com.qti.sensormodule.qtech_s5kgw1.bin
+odm/lib64/camera/com.qti.sensormodule.shine_gc02m0b.bin
 odm/lib64/camera/com.qti.sensormodule.shine_ov02a1b.bin
+odm/lib64/camera/com.qti.sensormodule.shine_ov02a1b_3rdmono.bin
+odm/lib64/camera/com.qti.sensormodule.sunny_imx586.bin
 odm/lib64/camera/com.qti.sensormodule.truly_hi846.bin
-odm/lib64/camera/com.qti.tuned.sm8250_ofilm_gc8054.bin
-odm/lib64/camera/com.qti.tuned.sm8250_qtech_imx616_19795.bin
-odm/lib64/camera/com.qti.tuned.sm8250_qtech_s5k3m5sx.bin
-odm/lib64/camera/com.qti.tuned.sm8250_qtech_s5kgw1.bin
+odm/lib64/camera/com.qti.sensormodule.truly_imx471.bin
+odm/lib64/camera/com.qti.tuned.sm8250_shine_gc02m0b.bin
 odm/lib64/camera/com.qti.tuned.sm8250_shine_ov02a1b.bin
-odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846_19795.bin
+odm/lib64/camera/com.qti.tuned.sm8250_sunny_imx586.bin
+odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin
+odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin
 
 # Charger
-odm/firmware/fastchg/19705/oplus_vooc_fw.bin
-odm/firmware/fastchg/19706/oplus_vooc_fw.bin
-odm/firmware/fastchg/19795/oplus_vooc_fw.bin
 odm/firmware/fastchg/20161/oplus_vooc_fw_rt5125.bin
+odm/firmware/fastchg/20607/oplus_vooc_fw.bin
 odm/firmware/fastchg/charging_thermal_config_default.txt
 
 # Display calibration data
@@ -102,9 +96,8 @@ vendor/lib64/libqtikeymaster4.so
 vendor/lib/hw/sound_trigger.primary.kona.so
 
 # NFC
-odm/etc/nfc/libnfc-mtp-SN100.conf_19705:vendor/etc/libnfc-nxp-19705.conf
-odm/etc/nfc/libnfc-mtp-SN100.conf_19795:vendor/etc/libnfc-nxp-19795.conf
-odm/etc/nfc/libnfc-nci.conf_19705:vendor/etc/libnfc-nci.conf
+odm/etc/nfc/libnfc-mtp-SN100.conf_20607:vendor/etc/libnfc-nxp-20607.conf
+odm/etc/nfc/libnfc-nci.conf_20607:vendor/etc/libnfc-nci.conf
 odm/lib/libsn100u_fw.so:vendor/lib/libsn100u_fw.so
 
 # Sensors

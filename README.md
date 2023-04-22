@@ -1,6 +1,6 @@
-# Device Tree for the Realme X50 Pro 5G
+# Device Tree for the Realme X50 Pro 5G Play
 
-The realme X50 Pro 5G (codenamed _"bladerunner"_) is a high-end smartphone from realme. It was announced and released in February 2020.
+The realme X50 Pro 5G Play (codenamed _"bladerunner_48m"_) is a high-end smartphone from realme. It was announced and released in February 2020.
 
 ## Device specifications
 
@@ -16,12 +16,12 @@ The realme X50 Pro 5G (codenamed _"bladerunner"_) is a high-end smartphone from 
 | Battery               | 4200 mAh Li-Po (non-removable), 65W fast charge                               |
 | Dimensions            | 159 x 74.2 x 8.9 mm (6.26 x 2.92 x 0.35 in)                                   |
 | Display               | 6.62 inch, 1080 x 2400 (20:9 ratio) AMOLED, 90Hz, HDR10+                      |
-| Rear Camera           | 64MP (wide) / 8MP (ultrawide) / 12MP (telephoto) 2 MP B/W (depth)             |
-| Front Camera          | 32MP (wide) / 8MP (ultrawide)                                                 |
+| Rear Camera           | 48MP (wide) / 8MP (ultrawide) / 2MP (macro) 2 MP B/W (depth)             |
+| Front Camera          | 16MP (wide) / 2MP (depth)                                                 |
 | Sensors               | Fingerprint (under display, optical), Accelerometer, Gyro, Proximity, Compass |
 
 ## Device picture
 
-![realme X50 Pro 5G](https://fdn2.gsmarena.com/vv/pics/realme/realme-x50-pro-5g-1.jpg)
+![realme X50 Pro 5G](https://ph-test-11.slatic.net/p/c139396b1d63e0e44b1a847b6aea3277.jpg)
 
 Copyright (C) 2022 The LineageOS Project.
