@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_bladerunner.mk
+    $(LOCAL_DIR)/evolution_bladerunner_48m.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_bladerunner-user \
-    evolution_bladerunner-userdebug \
-    evolution_bladerunner-eng
+    evolution_bladerunner_48m-user \
+    evolution_bladerunner_48m-userdebug \
+    evolution_bladerunner_48m-eng

@@ -21,7 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common EvolutionX stuff
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
-EVO_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 EXTRA_UDFPS_ANIMATIONS := true
@@ -30,20 +29,17 @@ EXTRA_UDFPS_ANIMATIONS := true
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_bladerunner
-PRODUCT_DEVICE := bladerunner
+PRODUCT_NAME := evolution_bladerunner_48m
+PRODUCT_DEVICE := bladerunner_48m
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := RMX2076
+PRODUCT_MODEL := RMX2072
 PRODUCT_MANUFACTURER := realme
 
-PRODUCT_SYSTEM_NAME := RMX2076
-PRODUCT_SYSTEM_DEVICE := RMX2076L1
+PRODUCT_SYSTEM_NAME := RMX2072
+PRODUCT_SYSTEM_DEVICE := RMX2072CN
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="RMX2076-user 12 RKQ1.211103.002 Q.202207142209 release-keys" \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
-
-BUILD_FINGERPRINT := realme/RMX2076/RMX2076L1:12/RKQ1.211103.002/Q.202207142209:user/release-keys
