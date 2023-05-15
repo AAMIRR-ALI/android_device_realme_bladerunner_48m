@@ -150,4 +150,3 @@ odm/vendor/firmware/widevine.mdt
 
 # Wifi
 odm/etc/wifi/bdwlan.elf
-odm/etc/wifi/bin_version
