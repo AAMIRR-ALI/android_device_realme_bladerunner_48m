@@ -27,12 +27,11 @@ RISING_MAINTAINER := AAMIRR_ALI
 RISING_CHIPSET := SDM865-5G
 RISING_DEVICE := Bladerunner
 TARGET_FACE_UNLOCK_SUPPORTED := true
-USE_AOSP_CLOCK := true
 EXTRA_UDFPS_ANIMATIONS := true
-TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Camera
 TARGET_BUILD_GRAPHENEOS_CAMERA := false
@@ -55,7 +54,10 @@ TARGET_OPTOUT_GOOGLE_TELEPHONY := false
 
 # Compiler will only build GMS playstore services, its dependencies, and Gboard app.
 # package type will change from PIXEL/GMS -> CORE
-TARGET_CORE_GMS := false
+TARGET_CORE_GMS := true
+
+# Package Type
+RISING_PACKAGE_TYPE := Gapps
 
 # Wether to use google (true) or AOSP (false) telephony package bundle. (defaults: false for gms core, true for pixel builds)
 TARGET_USE_GOOGLE_TELEPHONY := false
